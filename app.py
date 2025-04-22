@@ -4,8 +4,8 @@ import requests
 app = Flask(__name__)
 
 # Create a simple Python Flask app that serves a web page with an input box and sends user input to your CLU (Conversational Language Understanding) model.
-CLU_ENDPOINT = "https://t6.cognitiveservices.azure.com/language/:analyze-conversations?api-version=2022-10-01-preview"
-CLU_KEY = "bf109202055945f5a39c3613d0fcad62"
+CLU_ENDPOINT = "https://.cognitiveservices.azure.com/language/:analyze-conversations?api-version=2022-10-01-preview"
+CLU_KEY = ""
 PROJECT_NAME = "HealthcareAssistantBot"
 DEPLOYMENT_NAME = "HealthcareAssistantDeployment"
 
