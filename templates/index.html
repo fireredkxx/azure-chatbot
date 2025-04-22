@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Chatbot</title>
+    <title>Healthcare Chatbot</title>
 </head>
 <body>
-    <h2>Healthcare Chatbot</h2>
+    <h2>Ask the Healthcare Chatbot</h2>
     <form method="post">
-        <input type="text" name="user_input" placeholder="Ask me something..." required>
+        <input type="text" name="user_input" placeholder="Type your question..." required>
         <button type="submit">Send</button>
     </form>
-    <p>{{ response }}</p>
+    {% if response %}
+        <p><strong>Response:</strong> {{ response }}</p>
+    {% endif %}
 </body>
 </html>
